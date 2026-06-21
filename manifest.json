@@ -1,17 +1,11 @@
 {
   "manifest_version": 3,
   "name": "intoDNS Quick Inspector",
-  "version": "1.7",
-  "description": "Quickly inspect main DNS records (A, MX, NS) and redirect to intoDNS.",
-  "permissions": [
-    "activeTab",
-    "tabs"
-  ],
-  "host_permissions": [
-    "https://*/*"
-  ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
+  "version": "1.0.0",
+  "description": "Instantly check A, MX, and NS records for the active tab with smart MX-IP mapping and a direct shortcut to full intoDNS reports.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   }
 }
