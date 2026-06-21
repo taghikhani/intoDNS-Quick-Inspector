@@ -2,7 +2,7 @@
 
 A lightweight, developer-focused Chrome Extension that instantly queries and displays essential DNS records (`A`, `MX` with mapped IPs, and `NS`) for the active browser tab, providing a seamless one-click link to a full detailed report on intoDNS.
 
-![intoDNS Quick Inspector Icon](intodns-extension/icon.png)
+![intoDNS Quick Inspector Icon](icon.png)
 
 ## Features
 
