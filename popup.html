@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 400px; /* افزایش عرض برای جا شدن رکوردها همراه با آی‌پی */
+    padding: 12px;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+    h3 { 
+      margin-top: 0; 
+      color: #0066cc; 
+      font-size: 15px; 
+      border-bottom: 1px solid #dee2e6; 
+      padding-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .domain-title { 
+      font-weight: bold; 
+      color: #495057; 
+      margin-bottom: 12px; 
+      font-family: monospace;
+      font-size: 13px;
+      background: #e9ecef;
+      padding: 6px;
+      border-radius: 4px;
+      word-break: break-all;
+    }
+    .info-box { 
+      background: #ffffff; 
+      border: 1px solid #ced4da; 
+      padding: 10px; 
+      border-radius: 6px; 
+      margin-bottom: 12px; 
+      max-height: 220px; 
+      overflow-y: auto; 
+    }
+    .info-item { 
+      padding: 6px 0; 
+      border-bottom: 1px dashed #dee2e6; 
+    }
+    .info-item:last-child { border: none; }
+    .label { 
+      font-weight: bold; 
+      color: #6c757d; 
+      font-size: 11px; 
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .value { 
+      text-align: left; 
+      color: #111; 
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; 
+      font-size: 12px;
+      white-space: pre-line;
+      line-height: 1.4;
+    }
+    .error { 
+      color: #721c24; 
+      background-color: #f8d7da; 
+      border: 1px solid #f5c6cb; 
+      padding: 8px; 
+      border-radius: 4px; 
+      font-size: 12px; 
+    }
+    .btn {
+      display: block; 
+      padding: 10px; 
+      background: #0066cc; 
+      color: white; 
+      border: none;
+      border-radius: 4px; 
+      cursor: pointer; 
+      text-align: center; 
+      text-decoration: none; 
+      font-size: 13px; 
+      font-weight: bold;
+    }
+    .btn:hover { background: #0052a3; }
+    .loading { text-align: center; color: #6c757d; font-size: 13px; padding: 15px; }
+  </style>
+</head>
+<body>
+  <h3>intoDNS Inspector</h3>
+  <div id="domain-display" class="domain-title">Fetching target domain...</div>
+  
+  <div id="content-area">
+    <div class="loading">Querying DNS records...</div>
+  </div>
+
+  <a id="intodns-link" class="btn" target="_blank" style="display:none;">Full report on intoDNS</a>
+
+  <script src="popup.js"></script>
+</body>
+</html>
