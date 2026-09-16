@@ -1,11 +1,28 @@
 {
   "manifest_version": 3,
   "name": "intoDNS Quick Inspector",
-  "version": "1.0.0",
-  "description": "Instantly check A, MX, and NS records for the active tab with smart MX-IP mapping and a direct shortcut to full intoDNS reports.",
+  "version": "1.9",
+  "description": "Quickly inspect main DNS records (A, MX, NS) and redirect to intoDNS.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://dns.google/*",
+    "https://8.8.8.8/*",
+    "https://1.1.1.1/*",
+    "https://cloudflare-dns.com/*"
+  ],
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
   }
 }
